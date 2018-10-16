@@ -23,7 +23,7 @@ class PostList(SelectRelatedMixin, generic.ListView):
     select_related = ("user", "group")
 
 
-class UserPost(generic.ListView):
+class UserPosts(generic.ListView):
     model = models.Post
     template_name = "posts/user_post_list.html"
 
